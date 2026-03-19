@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="parallax-wrapper">
+        <div class="parallax-bg bg-gradient"></div>
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="parallax-layer layer-3"></div>
+        <div class="parallax-layer particles" id="particles"></div>
+
+        <div class="content-area">
+            <div class="calculator-card glass-panel" id="tiltCard">
+                <h1 class="title">Percentage<br>Calculator</h1>
+
+                <div class="input-group">
+                    <label for="marks">1. Enter the marks</label>
+                    <input type="number" id="marks" placeholder="e.g., 450" />
+                </div>
+
+                <div class="input-group">
+                    <label for="totalMarks">2. Enter the total marks</label>
+                    <input type="number" id="totalMarks" placeholder="e.g., 500" />
+                </div>
+
+                <button id="calculateBtn" class="glow-on-hover">Get Your Percentage</button>
+
+                <div id="resultContainer" class="result-box hidden">
+                    <h2 class="congrats-text" id="congratsMsg">Congratulations!</h2>
+                    <div class="percentage-display">
+                        <span id="percentageValue">0</span><span class="percent-sign">%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
